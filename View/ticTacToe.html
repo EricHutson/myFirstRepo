@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="../JavaScript/lib/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="../JavaScript/ticTacToe.js"></script>
+        <link rel="styleSheet" type="text/css" href="../Style/ticTacToe.css"/>
+    </head>
+    <body>
+        <div id="titleContainer">
+            <h1 id="gameTitle">A simple game of Tic Tac Toe</h1>
+        </div>
+        <div id="scoreContainer">
+            <p>Your wins: </p><span id="humanWins">0</span>
+            <br/>
+            <p>Computer wins: </p><span id="computerWins">0</span>
+            <br/>
+            <p>Cat wins: </p><span id="catWins">0</span>
+        </div>
+        <div id="playerSelectContainer">
+            <input type="radio" id="playerOne" name="playerRadio" checked/><b>Play First</b>
+            <input type="radio" id="playerTwo" name="playerRadio"/><b>Play Second</b>
+            <input type="button" id="beginGame" value="Start"/>
+        </div>
+        <div id="messageContainer">
+            <p id="gameMessageBad"></p>
+            <p id="gameMessageGood"></p>
+        </div>
+        <div id="gameContainer">
+            <table id="gameBoard">
+                <tbody id="gameBoardBody">
+                    <tr id="row0" class="row">
+                        <td id="col0" class="column"></td>
+                        <td id="col1" class="column"></td>
+                        <td id="col2" class="column"></td>
+                    </tr>
+                    <tr id="row1" class="row">
+                        <td id="col3" class="column"></td>
+                        <td id="col4" class="column"></td>
+                        <td id="col5" class="column"></td>
+                    </tr>
+                    <tr id="row2" class="row">
+                        <td id="col6" class="column"></td>
+                        <td id="col7" class="column"></td>
+                        <td id="col8" class="column"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
